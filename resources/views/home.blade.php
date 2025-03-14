@@ -245,7 +245,7 @@
                                         <a
                                             href="update-lalu-lintas"
                                             class="stretched-link"
-                                            >Jalur Alternatif</a
+                                            >Update Lalu Lintas & Jalur Alternatif</a
                                         >
                                     </h4>
                                 </div>
@@ -266,20 +266,6 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-md-6">
-                                <div class="icon-box">
-                                    <div class="icon">
-                                        <i class="bi bi-command"></i>
-                                    </div>
-                                    <h4 class="title">
-                                        <a
-                                            href="tips-mudik"
-                                            class="stretched-link"
-                                            >Update Lalu Lintas</a
-                                        >
-                                    </h4>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
