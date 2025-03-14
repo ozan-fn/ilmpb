@@ -70,11 +70,11 @@
             .floating-call-button {
                 position: fixed;
                 bottom: 80px;
-                right: 16px;
-                width: 44px;
-                height: 44px;
+                left: 20px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
-                background-color: #4caf50;
+                background-color: #ffffff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -178,6 +178,17 @@
                                             }}"
                                             class="d-block w-100"
                                             alt="Pengingat"
+                                        />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img
+                                            src="{{
+                                                asset(
+                                                    'assets/images/layanan-derek.jpg'
+                                                )
+                                            }}"
+                                            class="d-block w-100"
+                                            alt="Layanan derek"
                                         />
                                     </div>
                                     <div class="carousel-item">
@@ -299,7 +310,7 @@
 
         <div class="floating-call-button" onclick="callPolice()">
             <i class="bi bi-telephone-fill"></i>
-            <p style="position: absolute; bottom: 40px; right: 0; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border-radius: 5px;" data-aos="fade-out" data-aos-duration="3000">
+            <p style="position: absolute; bottom: 40px; left: 0; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border-radius: 5px;" data-aos="fade-out" data-aos-duration="3000">
                 Butuh bantuan Polisi?
             </p>
         </div>
