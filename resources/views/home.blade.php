@@ -342,7 +342,7 @@
                 data-aos="fade-out"
                 data-aos-duration="3000"
             >
-                Butuh bantuan Polisi?
+                Bantuan Polisi
             </p>
         </div>
 
