@@ -94,7 +94,7 @@
             <div class="col-xl-3 col-md-6">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-easel"></i></div>
-                <h4 class="title"><a href="/peta-dan-jalur-mudik" class="stretched-link">Posko Pengamanan Mudik</a></h4>
+                <h4 class="title"><a href="/pos-pengamanan-mudik" class="stretched-link">Posko Pengamanan Mudik</a></h4>
               </div>
             </div>
 

@@ -6,8 +6,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/peta-dan-jalur-mudik', function () {
-    return view('peta-dan-jalur-mudik');
+Route::get('/pos-pengamanan-mudik', function () {
+    return view('pos-pengamanan-mudik');
 });
 
 Route::get('/update-lalu-lintas', function () {
