@@ -66,6 +66,27 @@
                 height: 40px;
                 border-radius: 50%;
             }
+
+            .floating-call-button {
+                position: fixed;
+                bottom: 80px;
+                right: 16px;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background-color: #4caf50;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                z-index: 40;
+            }
+            .floating-call-button img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
         </style>
 
         <script>
@@ -245,7 +266,8 @@
                                         <a
                                             href="update-lalu-lintas"
                                             class="stretched-link"
-                                            >Update Lalu Lintas & Jalur Alternatif</a
+                                            >Update Lalu Lintas & Jalur
+                                            Alternatif</a
                                         >
                                     </h4>
                                 </div>
@@ -265,16 +287,25 @@
                                     </h4>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <div style="z-index: 40;" class="floating-button" onclick="openWaze()">
-            <img src="{{ asset('assets/images/waze.jpg') }}" alt="Waze">
+        <div style="z-index: 40" class="floating-button" onclick="openWaze()">
+            <img src="{{ asset('assets/images/waze.jpg') }}" alt="Waze" />
         </div>
+
+        <div class="floating-call-button" onclick="callPolice()">
+            <i class="bi bi-telephone-fill"></i>
+        </div>
+    
+        <script>
+            function callPolice() {
+                window.location.href = "tel:110";
+            }
+        </script>
 
         <!-- Footer Spacer -->
         <div class="hero"></div>
