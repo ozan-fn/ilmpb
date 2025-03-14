@@ -184,22 +184,22 @@
                                         <img
                                             src="{{
                                                 asset(
-                                                    'assets/images/layanan-derek.jpg'
+                                                    'assets/images/110.jpg'
                                                 )
                                             }}"
                                             class="d-block w-100"
-                                            alt="Layanan derek"
+                                            alt="110"
                                         />
                                     </div>
                                     <div class="carousel-item">
                                         <img
                                             src="{{
                                                 asset(
-                                                    'assets/images/110.jpg'
+                                                    'assets/images/layanan-derek.jpg'
                                                 )
                                             }}"
                                             class="d-block w-100"
-                                            alt="110"
+                                            alt="Layanan derek"
                                         />
                                     </div>
                                     <div class="carousel-item">
