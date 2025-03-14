@@ -299,12 +299,22 @@
 
         <div class="floating-call-button" onclick="callPolice()">
             <i class="bi bi-telephone-fill"></i>
+            <p style="position: absolute; bottom: 40px; right: 0; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border-radius: 5px;" data-aos="fade-out" data-aos-duration="3000">
+                Butuh bantuan Polisi?
+            </p>
         </div>
     
         <script>
             function callPolice() {
                 window.location.href = "tel:110";
             }
+
+            setTimeout(() => {
+            const helpText = document.querySelector('.floating-call-button p');
+            if (helpText) {
+                helpText.remove();
+            }
+        }, 9000);
         </script>
 
         <!-- Footer Spacer -->
