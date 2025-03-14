@@ -195,6 +195,17 @@
                                         <img
                                             src="{{
                                                 asset(
+                                                    'assets/images/110.jpg'
+                                                )
+                                            }}"
+                                            class="d-block w-100"
+                                            alt="110"
+                                        />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img
+                                            src="{{
+                                                asset(
                                                     'assets/images/cek keberadaan polisi di setiap sudut dengan aplikasi waze.jpg'
                                                 )
                                             }}"
