@@ -128,6 +128,28 @@
                                             alt="Pengingat"
                                         />
                                     </div>
+                                    <div class="carousel-item">
+                                        <img
+                                            src="{{
+                                                asset(
+                                                    'assets/images/cek keberadaan polisi di setiap sudut dengan aplikasi waze.jpg'
+                                                )
+                                            }}"
+                                            class="d-block w-100"
+                                            alt="Image 1"
+                                        />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img
+                                            src="{{
+                                                asset(
+                                                    'assets/images/cek secara berkala di aplikasi peta untuk mengantisipasi kemacetan saat mudik.jpg'
+                                                )
+                                            }}"
+                                            class="d-block w-100"
+                                            alt="Image 1"
+                                        />
+                                    </div>
                                 </div>
                                 <button
                                     class="carousel-control-prev"
@@ -247,13 +269,6 @@
                     data-bs-interval="2000"
                 >
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                src="{{ asset('assets/images/cek keberadaan polisi di setiap sudut dengan aplikasi waze.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 1"
-                            />
-                        </div>
                         <div class="carousel-item active">
                             <img
                                 src="{{ asset('assets/images/1.jpg') }}"
