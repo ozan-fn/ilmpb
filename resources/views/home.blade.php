@@ -95,6 +95,15 @@
                     "https://waze.com/ul?ll=-7.403973,109.2291803&navigate=yes";
                 window.open(location, "_blank");
             }
+
+            window.onload = function () {
+                setTimeout(() => {
+                    window.scrollTo({ top: 300, behavior: "smooth" }); 
+                    setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" }); 
+                    }, 1000); 
+                }, 1000); 
+            };
         </script>
     </head>
 
@@ -125,6 +134,7 @@
                         <ul>
                             <li><a href="/" class="active">Home</a></li>
                             <li><a href="tel:110">Butuh bantuan polisi?</a></li>
+                            <li><a href="/layanan-mudik">Layanan Mudik</a></li>
                             <li><a href="/layanan-mudik">Layanan Mudik</a></li>
                         </ul>
                         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -183,9 +193,7 @@
                                     <div class="carousel-item">
                                         <img
                                             src="{{
-                                                asset(
-                                                    'assets/images/110.jpg'
-                                                )
+                                                asset('assets/images/110.jpg')
                                             }}"
                                             class="d-block w-100"
                                             alt="110"
@@ -267,7 +275,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="icon-box">
                                     <div class="icon">
-                                        <i class="bi bi-command"></i>
+                                        <img style="width: 60px;" src="{{ asset('assets/icon/customer.jpg') }}" alt="">
                                     </div>
                                     <h4 class="title">
                                         <a
@@ -282,7 +290,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="icon-box">
                                     <div class="icon">
-                                        <i class="bi bi-gem"></i>
+                                        <img style="width: 60px;" src="{{ asset('assets/icon/traffic.jpg') }}" alt="">
                                     </div>
                                     <h4 class="title">
                                         <a
@@ -298,7 +306,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="icon-box">
                                     <div class="icon">
-                                        <i class="bi bi-easel"></i>
+                                        <img style="width: 60px;" src="{{ asset('assets/icon/home.jpg') }}" alt="">
                                     </div>
                                     <h4 class="title">
                                         <a
@@ -321,22 +329,36 @@
 
         <div class="floating-call-button" onclick="callPolice()">
             <i class="bi bi-telephone-fill"></i>
-            <p style="position: absolute; bottom: 40px; left: 0; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border-radius: 5px;" data-aos="fade-out" data-aos-duration="3000">
+            <p
+                style="
+                    position: absolute;
+                    bottom: 40px;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: #fff;
+                    padding: 10px;
+                    border-radius: 5px;
+                "
+                data-aos="fade-out"
+                data-aos-duration="3000"
+            >
                 Butuh bantuan Polisi?
             </p>
         </div>
-    
+
         <script>
             function callPolice() {
                 window.location.href = "tel:110";
             }
 
             setTimeout(() => {
-            const helpText = document.querySelector('.floating-call-button p');
-            if (helpText) {
-                helpText.remove();
-            }
-        }, 9000);
+                const helpText = document.querySelector(
+                    ".floating-call-button p"
+                );
+                if (helpText) {
+                    helpText.remove();
+                }
+            }, 3000);
         </script>
 
         <!-- Footer Spacer -->
