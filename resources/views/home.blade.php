@@ -46,6 +46,35 @@
 
         <!-- Main CSS File -->
         <link href="assets/css/main.css" rel="stylesheet" />
+
+        <style>
+            .floating-button {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+            .floating-button img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        </style>
+
+        <script>
+            function openWaze() {
+                const location =
+                    "https://waze.com/ul?ll=-7.403973,109.2291803&navigate=yes";
+                window.open(location, "_blank");
+            }
+        </script>
     </head>
 
     <body class="index-page">
@@ -103,7 +132,7 @@
                                 id="heroCarousel"
                                 class="carousel slide"
                                 data-bs-ride="carousel"
-                                data-bs-interval="2000"
+                                data-bs-interval="1200"
                             >
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -229,7 +258,7 @@
                                         <a
                                             href="update-lalu-lintas"
                                             class="stretched-link"
-                                            >Update Lalu Lintas</a
+                                            >Jalur Alternatif</a
                                         >
                                     </h4>
                                 </div>
@@ -253,113 +282,11 @@
                     </div>
                 </div>
             </section>
-
-            <!-- About Section -->
-            <section id="about" class="section">
-                <div class="container section-title" data-aos="fade-up">
-                    <h2>Polresta Banyumas</h2>
-                    <h5>Mudik Aman, Keluarga Nyaman</h5>
-                </div>
-
-                <!-- Bottom Carousel -->
-                <div
-                    id="bottomCarousel"
-                    class="carousel slide"
-                    data-bs-ride="carousel"
-                    data-bs-interval="2000"
-                >
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                src="{{ asset('assets/images/1.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 1"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/2.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 2"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/3.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 3"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/4.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 4"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/5.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 5"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/6.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 6"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/7.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 7"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/8.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 8"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="{{ asset('assets/images/9.jpg') }}"
-                                class="d-block w-100"
-                                alt="Image 9"
-                            />
-                        </div>
-                    </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#bottomCarousel"
-                        data-bs-slide="prev"
-                    >
-                        <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                        ></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#bottomCarousel"
-                        data-bs-slide="next"
-                    >
-                        <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                        ></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
         </main>
+
+        <div style="z-index: 40;" class="floating-button" onclick="openWaze()">
+            <img src="{{ asset('assets/images/waze.jpg') }}" alt="Waze">
+        </div>
 
         <!-- Footer Spacer -->
         <div class="hero"></div>
