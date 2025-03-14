@@ -103,6 +103,7 @@
                     <nav id="navmenu" class="navmenu">
                         <ul>
                             <li><a href="/" class="active">Home</a></li>
+                            <li><a href="tel:110">Butuh bantuan polisi?</a></li>
                         </ul>
                         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                     </nav>
@@ -237,21 +238,6 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="icon-box">
                                     <div class="icon">
-                                        <i class="bi bi-easel"></i>
-                                    </div>
-                                    <h4 class="title">
-                                        <a
-                                            href="/pos-pengamanan-mudik"
-                                            class="stretched-link"
-                                            >Posko Pengamanan Mudik</a
-                                        >
-                                    </h4>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-md-6">
-                                <div class="icon-box">
-                                    <div class="icon">
                                         <i class="bi bi-gem"></i>
                                     </div>
                                     <h4 class="title">
@@ -267,13 +253,28 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="icon-box">
                                     <div class="icon">
+                                        <i class="bi bi-easel"></i>
+                                    </div>
+                                    <h4 class="title">
+                                        <a
+                                            href="/pos-pengamanan-mudik"
+                                            class="stretched-link"
+                                            >Posko Pengamanan Mudik</a
+                                        >
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6">
+                                <div class="icon-box">
+                                    <div class="icon">
                                         <i class="bi bi-command"></i>
                                     </div>
                                     <h4 class="title">
                                         <a
                                             href="tips-mudik"
                                             class="stretched-link"
-                                            >Tips Mudik</a
+                                            >Update Lalu Lintas</a
                                         >
                                     </h4>
                                 </div>
