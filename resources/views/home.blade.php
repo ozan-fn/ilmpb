@@ -135,7 +135,6 @@
                             <li><a href="/" class="active">Home</a></li>
                             <li><a href="tel:110">Butuh bantuan polisi?</a></li>
                             <li><a href="/layanan-mudik">Layanan Mudik</a></li>
-                            <li><a href="/layanan-mudik">Layanan Mudik</a></li>
                         </ul>
                         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                     </nav>
