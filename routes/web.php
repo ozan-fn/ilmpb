@@ -20,7 +20,3 @@ Route::middleware('auth')->group(function () {
     Route::delete('/upload/{image}', [UploadController::class, 'destroy'])->name('upload.destroy');
     Route::patch('/upload/{image}', [UploadController::class, 'updateOrder'])->name('upload.updateOrder');
 });
-
-Route::get('/foo', function () {
-    Artisan::call('storage:link');
-});
