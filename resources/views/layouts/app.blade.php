@@ -101,7 +101,7 @@
 </head>
 
 <body class="index-page">
-    <!-- Header -->
+    {{-- Header --}}
     <header id="header" class="header fixed-top">
         <div class="branding d-flex align-items-center">
             <div class="container position-relative d-flex align-items-center justify-content-between">

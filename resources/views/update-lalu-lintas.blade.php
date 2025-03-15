@@ -24,6 +24,4 @@
 
         <img style="width: 100vw; object-fit: fill" src="{{ asset('assets/images/lalu lintas3.png') }}" alt="" />
     </section>
-
-    <div class="hero"></div>
 @endsection

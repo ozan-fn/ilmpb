@@ -1,36 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-    <main class="main">
-        <div class="hero section">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Layanan Mudik<br /></h2>
-            </div>
-
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="{{ asset('assets/images/110.jpg') }}" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item active">
-                        <img src="{{ asset('assets/images/layanan.jpg') }}" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('assets/images/layanan-derek.jpg') }}" class="d-block w-100" alt="..." />
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+    <div class="hero section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Layanan Mudik<br /></h2>
         </div>
 
-    </main>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/images/110.jpg') }}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item active">
+                    <img src="{{ asset('assets/images/layanan.jpg') }}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/images/layanan-derek.jpg') }}" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 @endsection
 
 
