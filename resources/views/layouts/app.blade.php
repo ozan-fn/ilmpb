@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Informasi Mudik Polresta Banyumas</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <meta name="description"
         content="Informasi resmi dari Polresta Banyumas untuk layanan keamanan dan kelancaran lalu lintas selama mudik." />
     <meta name="keywords" content="mudik, Polresta Banyumas, keamanan, lalu lintas, layanan publik" />
@@ -12,8 +14,10 @@
 
 
     {{-- Favicons --}}
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/img/favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/img/favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/img/favicon/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{asset('assets/img/favicon/site.webmanifest')}}">
 
     {{-- Fonts --}}
     <link href="https://fonts.googleapis.com" rel="preconnect" />
