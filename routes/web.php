@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UploadController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', fn() => view('home'));
@@ -18,4 +19,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/upload', [UploadController::class, 'store'])->name('upload');
     Route::delete('/upload/{image}', [UploadController::class, 'destroy'])->name('upload.destroy');
     Route::patch('/upload/{image}', [UploadController::class, 'updateOrder'])->name('upload.updateOrder');
+});
+
+Route::get('/foo', function () {
+    Artisan::call('storage:link');
 });
