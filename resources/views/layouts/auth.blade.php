@@ -12,22 +12,22 @@
             'isActive' => request()->is('dashboard'),
         ],
         [
-            'route' => route('pospam'),
+            'route' => route('admin-pospam'),
             'icon' => '
                 <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
                 </svg>',
             'label' => 'Pospam',
-            'isActive' => request()->is('pospam'),
+            'isActive' => request()->is('admin-pospam'),
         ],
         [
-            'route' => route('layanan-mudik'),
+            'route' => route('admin-layanan-mudik'),
             'icon' => '
                 <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M3 4a1 1 0 0 0-.822 1.57L6.632 12l-4.454 6.43A1 1 0 0 0 3 20h13.153a1 1 0 0 0 .822-.43l4.847-7a1 1 0 0 0 0-1.14l-4.847-7a1 1 0 0 0-.822-.43H3Z" clip-rule="evenodd"/>
                 </svg>',
             'label' => 'Layanan Mudik',
-            'isActive' => request()->is('layanan-mudik'),
+            'isActive' => request()->is('admin-layanan-mudik'),
         ],
         // Tambahkan elemen lain sesuai kebutuhan
     ];
