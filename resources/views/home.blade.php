@@ -71,7 +71,7 @@
                                 <img style="width: 60px; height: 60px; object-fit: contain;"
                                     src="{{ asset('assets/icon/traffic.jpg') }}" alt="Update Lalu Lintas">
                             </div>
-                            <h4 class="title fw-bold">Update Lalu Lintas</h4>
+                            <h4 class="title fw-bold">Jalur Alternatif & Update Lalu Lintas</h4>
                             <p class="text-muted">Informasi terkini tentang kondisi lalu lintas dan jalur alternatif</p>
                             <a href="update-lalu-lintas" class="btn btn-primary mt-auto">Selengkapnya</a>
                         </div>
