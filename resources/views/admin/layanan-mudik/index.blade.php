@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 
-@section('title', 'Halaman Dashboard')
+@section('title', 'Layanan Mudik')
 
 @section('content')
 
