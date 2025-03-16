@@ -18,7 +18,7 @@
                     <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
                 </svg>',
             'label' => 'Pospam',
-            'isActive' => request()->is('admin-pospam'),
+            'isActive' => request()->is('admin/pospam'),
         ],
         [
             'route' => route('admin-layanan-mudik'),
@@ -27,9 +27,17 @@
                     <path fill-rule="evenodd" d="M3 4a1 1 0 0 0-.822 1.57L6.632 12l-4.454 6.43A1 1 0 0 0 3 20h13.153a1 1 0 0 0 .822-.43l4.847-7a1 1 0 0 0 0-1.14l-4.847-7a1 1 0 0 0-.822-.43H3Z" clip-rule="evenodd"/>
                 </svg>',
             'label' => 'Layanan Mudik',
-            'isActive' => request()->is('admin-layanan-mudik'),
+            'isActive' => request()->is('admin/layanan-mudik'),
         ],
-        // Tambahkan elemen lain sesuai kebutuhan
+        [
+            'route' => route('admin-lalulintas-alternatif'),
+            'icon' => '
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 20V7m0 13-4-4m4 4 4-4m4-12v13m0-13 4 4m-4-4-4 4"/>
+                </svg>',
+            'label' => 'Update Lalulintas',
+            'isActive' => request()->is('admin/lalulintas-alternatif'),
+        ],
     ];
 @endphp
 

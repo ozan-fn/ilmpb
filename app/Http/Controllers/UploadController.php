@@ -12,7 +12,7 @@ class UploadController extends Controller
     {
         $request->validate([
             'file' => 'required|image|max:20480',
-            'type' => 'required|in:dashboard,layanan-mudik,pospam' // Validate the type
+            'type' => 'required|in:dashboard,layanan-mudik,pospam,lalulintas-alternatif' 
         ]);
 
         $file = $request->file('file');
