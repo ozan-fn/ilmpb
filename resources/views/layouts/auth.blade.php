@@ -65,8 +65,7 @@
         <div class="flex flex-wrap items-center p-4">
             <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
                 aria-controls="default-sidebar" type="button"
-                class="inline-flex items-center text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                <span class="sr-only">Open sidebar</span>
+                class="shrink-0 inline-flex items-center text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path clip-rule="evenodd" fill-rule="evenodd"
@@ -75,7 +74,7 @@
                 </svg>
             </button>
 
-            <a href="https://flowbite.com/" class="flex items-center ml-3 space-x-3 rtl:space-x-reverse">
+            <a href="/dashboard" class="flex items-center ml-3 space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('assets/images/logo polresta.png') }}" class="h-8" alt="Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Polresta
                     Banyumas</span>
@@ -84,7 +83,7 @@
     </nav>
 
     <aside id="default-sidebar"
-        class="fixed top-0 pt-16 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        class="fixed top-0 left-0 py-16 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
         <div class="flex flex-col h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
             <ul class="space-y-2 font-medium">
@@ -123,7 +122,7 @@
 
     @yield('content')
 
-    <link rel="stylesheet" href="{{ asset('assets/vendor/flowbite/flowbite.min.js') }}" />
+    <script src="{{ asset('assets/vendor/flowbite/flowbite.min.js') }}"></script>
     @yield('script')
 </body>
 
