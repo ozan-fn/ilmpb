@@ -13,14 +13,17 @@ class HomeController extends Controller
     }
 
     public function posPengamanPublic() {
-        return view('pos-pengamanan-mudik');
+        $images = Image::where('type', 'pospam')->orderBy('order', 'asc')->get();
+        return view('pos-pengamanan-mudik', compact('images'));
     }
 
     public function updateLaluLintas() {
-        return view('update-lalu-lintas');
+        $images = Image::where('type', 'lalulintas-alternatif')->orderBy('order', 'asc')->get();
+        return view('update-lalu-lintas', compact('images'));
     }
 
     public function layananMudik() {
-        return view('layanan-mudik');
+        $images = Image::where('type', 'layanan-mudik')->orderBy('order', 'asc')->get();
+        return view('layanan-mudik', compact('images'));
     }
 }

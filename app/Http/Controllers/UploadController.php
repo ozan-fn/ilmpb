@@ -20,12 +20,16 @@ class UploadController extends Controller
 
         $path = $file->store($type, 'public');
 
+        $lastOrder = Image::where('type', $type)->max('order');
+        $newOrder = $lastOrder ? $lastOrder + 1 : 1;
+
         $image = new Image();
         $image->path = $path;
         $image->type = $type;
         $image->original_name = $file->getClientOriginalName();
         $image->mime_type = $file->getMimeType();
         $image->size = $file->getSize();
+        $image->order = $newOrder;
         $image->save();
 
         return back()->with('success', 'Image uploaded successfully');

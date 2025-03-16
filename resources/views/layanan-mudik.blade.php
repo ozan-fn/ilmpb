@@ -8,15 +8,12 @@
 
         <div id="carouselExample" class="carousel slide col-sm-6 col-md-5 col-lg-4 " data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/images/110.jpg') }}" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item active">
-                    <img src="{{ asset('assets/images/layanan.jpg') }}" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/images/layanan-derek.jpg') }}" class="d-block w-100" alt="..." />
-                </div>
+                @foreach ($images as $img)
+                    <div class="carousel-item @if ($loop->first) active @endif">
+                        <img src="{{ Storage::url($img->path) }}" class="d-block w-100"
+                            alt="Selamat Datang">
+                    </div>
+                @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
