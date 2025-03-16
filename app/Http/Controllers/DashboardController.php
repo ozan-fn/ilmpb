@@ -9,8 +9,7 @@ class DashboardController extends Controller
 {
     public function index() {
         $dashboardImages = Image::getDashboardImages();
-        $layananMudikImages = Image::getLayananMudikImages();
 
-        return view('admin.dashboard.index', compact('dashboardImages', 'layananMudikImages'));
+        return view('admin.dashboard.index', compact('dashboardImages'));
     }
 }
