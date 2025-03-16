@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="hero">
+    <div class="hero section g-0 d-flex justify-content-center align-items-center row">
         <div class="container section-title" data-aos="fade-up">
             <h2>Pos Pengamanan Mudik<br /></h2>
         </div>
 
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div id="carouselExample" class="carousel slide col-sm-6 col-md-5 col-lg-4" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item">
                     <img src="{{ asset('assets/images/pospam/pospam ajibarang.jpg') }}" class="d-block w-100"

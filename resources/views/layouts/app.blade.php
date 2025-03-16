@@ -107,12 +107,12 @@
 <body class="index-page">
     {{-- Header --}}
     <header id="header" class="header fixed-top">
-        <div class="branding d-flex align-items-center">
+        <div style="height: 80px;" class="branding d-flex align-items-center">
             <div class="container position-relative d-flex align-items-center justify-content-between">
                 <a href="/" class="logo d-flex align-items-center">
-                    <img src="{{ asset('assets/images/logo polresta.png') }}" alt="Logo Polresta" />
+                    <img style="margin-left: 4px" src="{{ asset('assets/images/logo polresta.png') }}" alt="Logo Polresta" />
                     <img src="{{ asset('assets/images/logo bebrayan3.png') }}" alt="Logo Bebrayan" />
-                    <h4 class="sitename">
+                    <h4 style="margin-bottom: 0px">
                         Informasi Mudik Polresta Banyumas
                     </h4>
                 </a>
