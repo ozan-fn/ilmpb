@@ -5,39 +5,32 @@
     <div style="padding-top: 80px;">
         <div style="min-height: 90vh;" class="relative container g-0 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="row g-0 justify-content-between">
-                <div class="col-sm-6 col-md-6 col-lg-6 mt-5 mt-md-0 px-4 order-2 order-md-1 d-flex flex-column justify-content-center">
+                <div
+                    class="col-sm-6 col-md-6 col-lg-6 mt-5 mt-md-0 px-4 order-2 order-md-1 d-flex flex-column justify-content-center">
                     <h2 class="fw-bold mb-4">Selamat Mudik! Pastikan Perjalanan Anda Aman & Nyaman</h2>
-                    <p class="lead">Temukan informasi lengkap dan layanan untuk perjalanan mudik Anda yang lebih aman dan nyaman.</p>
+                    <p class="lead">Temukan informasi lengkap dan layanan untuk perjalanan mudik Anda yang lebih aman dan
+                        nyaman.</p>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 order-1 order-md-2 d-flex justify-content-center align-items-center">
                     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1200">
                         <div class="carousel-inner">
                             <!-- Carousel Items -->
-                            <div class="carousel-item active">
-                                <img src="{{ asset('assets/images/selamat-datang.jpg') }}" class="d-block w-100 img-fluid" alt="Selamat Datang">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="{{ asset('assets/images/pengingat.jpg') }}" class="d-block w-100 img-fluid" alt="Pengingat">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="{{ asset('assets/images/110.jpg') }}" class="d-block w-100 img-fluid" alt="110">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="{{ asset('assets/images/layanan-derek.jpg') }}" class="d-block w-100 img-fluid" alt="Layanan Derek">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="{{ asset('assets/images/cek keberadaan polisi di setiap sudut dengan aplikasi waze.jpg') }}" class="d-block w-100 img-fluid" alt="Keberadaan Polisi">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="{{ asset('assets/images/cek secara berkala di aplikasi peta untuk mengantisipasi kemacetan saat mudik.jpg') }}" class="d-block w-100 img-fluid" alt="Cek Kemacetan">
-                            </div>
+                            @foreach ($images as $img)
+                                <div class="carousel-item @if ($loop->first) active @endif">
+                                    <img src="{{ Storage::url($img->path) }}" class="d-block w-100 img-fluid"
+                                        alt="Selamat Datang">
+                                </div>
+                            @endforeach
+
                         </div>
                         <!-- Carousel Controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -45,7 +38,7 @@
                 </div>
             </div>
         </div>
-        
+
         {{-- Icon Boxes --}}
         <div class="icon-boxes mt-5" data-aos="fade-up" data-aos-delay="200">
             <div class="container">

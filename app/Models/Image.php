@@ -26,7 +26,7 @@ class Image extends Model
 
     public static function getDashboardImages()
     {
-        return Image::where('type', 'dashboard')->orderBy('created_at', 'desc')->get();
+        return Image::where('type', 'dashboard')->orderBy('order', 'asc')->get();
     }
 
     public static function getLayananMudikImages()
