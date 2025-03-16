@@ -11,7 +11,7 @@
                 @foreach ($images as $img)
                     <div class="carousel-item @if ($loop->first) active @endif">
                         <img src="{{ Storage::url($img->path) }}" class="d-block w-100"
-                            alt="Selamat Datang">
+                            alt="">
                     </div>
                 @endforeach
             </div>
