@@ -31,11 +31,11 @@ class Image extends Model
 
     public static function getLayananMudikImages()
     {
-        return Image::where('type', 'layanan-mudik')->orderBy('order', 'desc')->get();
+        return Image::where('type', 'layanan-mudik')->orderBy('order', 'asc')->get();
     }
     
     public static function getPospamImages()
     {
-        return Image::where('type', 'pospam')->orderBy('order', 'desc')->get();
+        return Image::where('type', 'pospam')->orderBy('order', 'asc')->get();
     }
 }
