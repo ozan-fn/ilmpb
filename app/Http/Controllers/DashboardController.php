@@ -11,6 +11,6 @@ class DashboardController extends Controller
         $dashboardImages = Image::getDashboardImages();
         $layananMudikImages = Image::getLayananMudikImages();
 
-        return view('dashboard.index', compact('dashboardImages', 'layananMudikImages'));
+        return view('admin.dashboard.index', compact('dashboardImages', 'layananMudikImages'));
     }
 }

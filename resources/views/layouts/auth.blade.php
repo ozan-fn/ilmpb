@@ -11,16 +11,24 @@
             'label' => 'Dashboard',
             'isActive' => request()->is('dashboard'),
         ],
-        // [
-        //     'route' => '#',
-        //     'icon' => '
-        //         <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-        //             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
-        //             <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
-        //         </svg>',
-        //     'label' => 'Kanban',
-        //     'isActive' => false,
-        // ],
+        [
+            'route' => route('pospam'),
+            'icon' => '
+                <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
+                </svg>',
+            'label' => 'Pospam',
+            'isActive' => request()->is('pospam'),
+        ],
+        [
+            'route' => route('layanan-mudik'),
+            'icon' => '
+                <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M3 4a1 1 0 0 0-.822 1.57L6.632 12l-4.454 6.43A1 1 0 0 0 3 20h13.153a1 1 0 0 0 .822-.43l4.847-7a1 1 0 0 0 0-1.14l-4.847-7a1 1 0 0 0-.822-.43H3Z" clip-rule="evenodd"/>
+                </svg>',
+            'label' => 'Layanan Mudik',
+            'isActive' => request()->is('layanan-mudik'),
+        ],
         // Tambahkan elemen lain sesuai kebutuhan
     ];
 @endphp
@@ -40,8 +48,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('assets/img/favicon/site.webmanifest') }}">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" />
-    @stack('css')
+    <link rel="stylesheet" href="{{ asset('assets/vendor/flowbite/flowbite.min.css') }}" />
+    @yield('css')
 </head>
 
 <body>
@@ -107,8 +115,8 @@
 
     @yield('content')
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    @stack('script')
+    <link rel="stylesheet" href="{{ asset('assets/vendor/flowbite/flowbite.min.js') }}" />
+    @yield('script')
 </body>
 
 </html>

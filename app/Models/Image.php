@@ -33,4 +33,9 @@ class Image extends Model
     {
         return Image::where('type', 'layanan-mudik')->orderBy('created_at', 'desc')->get();
     }
+    
+    public static function getPospamImages()
+    {
+        return Image::where('type', 'pospam')->orderBy('created_at', 'desc')->get();
+    }
 }

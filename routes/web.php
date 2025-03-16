@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LayananMudikController;
+use App\Http\Controllers\PospamController;
 use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +18,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/pospam', [PospamController::class, 'index'])->name('pospam');
+    Route::get('/layanan-mudik', [LayananMudikController::class, 'index'])->name('layanan-mudik');
+
     Route::post('/upload', [UploadController::class, 'store'])->name('upload');
     Route::delete('/upload/{image}', [UploadController::class, 'destroy'])->name('upload.destroy');
     Route::patch('/upload/{image}', [UploadController::class, 'updateOrder'])->name('upload.updateOrder');

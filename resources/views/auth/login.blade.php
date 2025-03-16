@@ -1,4 +1,6 @@
-@extends('layouts.guest')
+@extends('layouts.flowbite')
+
+@section('title', 'Halaman Login')
 
 @section('content')
     <div class="h-screen flex justify-center items-center">
